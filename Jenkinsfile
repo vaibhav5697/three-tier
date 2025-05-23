@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'Nodejs'  
+        nodejs 'nodejs-18'  
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/vaibhav5697/three-tier.git'
+                git branch: 'main', url: 'https://github.com/vaibhav5697/three-tier.git'
             }
         }
 
